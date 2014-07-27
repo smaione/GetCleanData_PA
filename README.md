@@ -1,6 +1,7 @@
 GetCleanData_PA
 Stephen Maione
 Coursera.com
+README.md
 ===============
 
 #Peer Assessment for Getting and Cleaning Data on Coursera
@@ -41,6 +42,10 @@ Lines 181_184 make the tidied data presentable.  Column names are finalized indi
 Line 187 outputs the tidied summarization to "tidy_data.txt" with the default " " separator.
 
 
-## Summary
+## Final thoughts
 
-The narrow format that I decided on did not prove to be as useful as I had initially hoped.  I think it is not as easy to parse visually as a wide set, but given my lack of experience, I could not expect myself to make that judgement beforehand.  I also "hacked" my way through portions of the transition from wide to narrow because I could not figure out how to get means and SDs on the same row as their matching signal via any pre-packaged tools.  In the end, my solution executes in an acceptable amount of time, and without any known errors.
+The narrow format that I decided on did not prove to be as useful as I had initially hoped.  I think it is not as easy to parse visually as a wide set, but given my lack of experience, I could not expect myself to make that judgement beforehand.  I also "hacked" my way through portions of the transition from wide to narrow because I could not figure out how to get means and SDs on the same row as their matching signal via any pre-packaged tools.
+
+I do find conceptual value in the narrow format which is mostly why I pursued it to begin with.  I view the signals as physical entities along with their subjects and activities while the corresponding data exist only as numeric information.  I personally like this distinction emphasized by narrow arrangement of columns.
+
+In the end, my solution executes in an acceptable amount of time, and without any known errors.
