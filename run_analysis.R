@@ -29,9 +29,6 @@ y_test <-read.table('./UCI HAR Dataset/test/y_test.txt',
 subject_test <-read.table('./UCI HAR Dataset/test/subject_test.txt',
                           col.names='subject')
 
-## Combine the test data
-test_data <- cbind(subject_test, y_test, X_test)
-
 ## Load the training data
 X_train <-read.table('./UCI HAR Dataset/train/X_train.txt',
                      col.names=features$feature)
@@ -40,7 +37,8 @@ y_train <-read.table('./UCI HAR Dataset/train/y_train.txt',
 subject_train <-read.table('./UCI HAR Dataset/train/subject_train.txt',
                           col.names='subject')
 
-## Combine the training data
+## Combine the test and training data respectively
+test_data <- cbind(subject_test, y_test, X_test)
 train_data <- cbind(subject_train, y_train, X_train)
 
 ## Merge the training and the test sets to create one data set.
